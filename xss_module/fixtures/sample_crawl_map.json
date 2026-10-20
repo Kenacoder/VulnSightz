@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "target": "http://127.0.0.1:5001",
+  "generated_at": "2026-10-11T00:00:00+00:00",
+  "pages": [
+    {
+      "url": "http://127.0.0.1:5001/reflect?q=test",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "test", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/encoded?q=test",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "test", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/attr?q=test",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "test", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/js?q=test",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "test", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/url?q=https://example.com",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "https://example.com", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/inert?q=test",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "q", "value": "test", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    },
+    {
+      "url": "http://127.0.0.1:5001/multi?a=1&b=2",
+      "method": "GET",
+      "status": 200,
+      "content_type": "text/html",
+      "params": [
+        {"name": "a", "value": "1", "source": "query", "input_type": "text"},
+        {"name": "b", "value": "2", "source": "query", "input_type": "text"}
+      ],
+      "forms": [],
+      "links": [],
+      "renders_from": []
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://127.0.0.1:5001/comment",
+      "method": "POST",
+      "enctype": "application/x-www-form-urlencoded",
+      "fields": [
+        {"name": "body", "value": "", "input_type": "textarea", "required": false},
+        {"name": "submit", "value": "Post", "input_type": "submit", "required": false}
+      ],
+      "source_page": "http://127.0.0.1:5001/comment",
+      "renders_to": ["http://127.0.0.1:5001/comments"]
+    }
+  ],
+  "endpoints": [
+    {
+      "url": "http://127.0.0.1:5001/reflect",
+      "method": "GET",
+      "params": [
+        {"name": "q", "value": "", "source": "query", "input_type": "text"}
+      ]
+    }
+  ]
+}

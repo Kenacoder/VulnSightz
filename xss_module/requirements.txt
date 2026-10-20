@@ -1,0 +1,8 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+pytest>=8.0.0
+flask>=3.0.0
+
+# Optional (active browser verification)
+# playwright>=1.40.0
